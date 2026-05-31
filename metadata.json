@@ -1,0 +1,6 @@
+{
+  "name": "断电保护区 🌲",
+  "description": "一个关怀神经系统过载、断电恢复期的极简数字避难所。精装并重现原版八段自愈语录，配合传统中日文直排装裱，提供深邃颂钵磬音、4-4-4-4箱式呼吸调律，以及可一键定制与下载至本地的高分辨率朋友圈美图/手机壁纸制卡工坊。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

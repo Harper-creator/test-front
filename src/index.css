@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-serif: "Playfair Display", "STSong", "Songti SC", "Georgia", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom breathing pulsing animation */
+@keyframes soft-breathe {
+  0%, 100% {
+    transform: scale(0.95);
+    opacity: 0.15;
+  }
+  40% {
+    transform: scale(1.35);
+    opacity: 0.65;
+  }
+  60% {
+    transform: scale(1.35);
+    opacity: 0.65;
+  }
+}
+
+@keyframes core-breathe {
+  0%, 100% {
+    transform: scale(1.0);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+  }
+  40%, 60% {
+    transform: scale(1.15);
+    box-shadow: 0 0 45px rgba(16, 185, 129, 0.4);
+  }
+}
+
+.animate-soft-breathe {
+  animation: soft-breathe 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-core-breathe {
+  animation: core-breathe 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Vertical writing helper */
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Subtle page background grid paper look */
+.bg-grid-paper {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(46, 43, 39, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(46, 43, 39, 0.03) 1px, transparent 1px);
+}
+
